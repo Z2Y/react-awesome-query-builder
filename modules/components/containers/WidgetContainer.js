@@ -21,6 +21,7 @@ export default (Widget) => {
             valueSrc: PropTypes.instanceOf(Immutable.List).isRequired,
             field: PropTypes.string.isRequired,
             operator: PropTypes.string.isRequired,
+            operatorOptions: PropTypes.object,
             //actions
             setValue: PropTypes.func,
             setValueSrc: PropTypes.func,
@@ -78,6 +79,7 @@ export default (Widget) => {
                 config: this.props.config,
                 field: this.props.field,
                 operator: this.props.operator,
+                operatorOptions: this.props.operatorOptions,
                 delta: delta,
                 value: this.props.value.get(delta),
                 label: valueLabel.label,
