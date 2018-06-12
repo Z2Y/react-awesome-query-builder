@@ -166,6 +166,7 @@ class Rule extends Component {
                                   key="values"
                                   field={this.props.selectedField}
                                   operator={this.props.selectedOperator}
+                                  operatorOptions={this.props.operatorOptions}
                                   value={this.props.value}
                                   valueSrc={this.props.valueSrc}
                                   config={this.props.config}
