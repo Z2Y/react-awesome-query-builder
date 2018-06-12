@@ -121,6 +121,7 @@ exports.default = function (Widget) {
                     config: _this.props.config,
                     field: _this.props.field,
                     operator: _this.props.operator,
+                    operatorOptions: _this.props.operatorOptions,
                     delta: delta,
                     value: _this.props.value.get(delta),
                     label: valueLabel.label,
@@ -267,6 +268,7 @@ exports.default = function (Widget) {
         valueSrc: _propTypes2.default.instanceOf(_immutable2.default.List).isRequired,
         field: _propTypes2.default.string.isRequired,
         operator: _propTypes2.default.string.isRequired,
+        operatorOptions: _propTypes2.default.object,
         //actions
         setValue: _propTypes2.default.func,
         setValueSrc: _propTypes2.default.func
