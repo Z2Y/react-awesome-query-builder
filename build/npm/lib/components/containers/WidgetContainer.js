@@ -218,7 +218,7 @@ exports.default = function (Widget) {
                             if (sep) {
                                 parts.push(_react2.default.createElement(
                                     'div',
-                                    { className: 'widget--sep' },
+                                    { key: "widget-separators-" + delta, className: 'widget--sep' },
                                     settings.showLabels ? _react2.default.createElement(
                                         'label',
                                         null,
